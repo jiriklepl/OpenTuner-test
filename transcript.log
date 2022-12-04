@@ -1,0 +1,24 @@
+/tmp/5d306c5e-7372-11ed-9cc3-0719f1d6b954
+[    11s]    INFO opentuner.search.plugin.DisplayPlugin: tests=4, best {'blockSize': 889, 'compiler': 'clang', 'optLevel': 1}, cost time=inf, found by DifferentialEvolutionAlt
+[    23s]    INFO opentuner.search.plugin.DisplayPlugin: tests=12, best {'blockSize': 90, 'compiler': 'gcc', 'optLevel': 3}, cost time=0.8079, found by UniformGreedyMutation
+[    41s]    INFO opentuner.search.plugin.DisplayPlugin: tests=24, best {'blockSize': 90, 'compiler': 'gcc', 'optLevel': 3}, cost time=0.8079, found by UniformGreedyMutation
+[    53s]    INFO opentuner.search.plugin.DisplayPlugin: tests=33, best {'blockSize': 90, 'compiler': 'gcc', 'optLevel': 3}, cost time=0.8079, found by UniformGreedyMutation
+[    67s]    INFO opentuner.search.plugin.DisplayPlugin: tests=44, best {'blockSize': 90, 'compiler': 'gcc', 'optLevel': 3}, cost time=0.8079, found by UniformGreedyMutation
+[    83s]    INFO opentuner.search.plugin.DisplayPlugin: tests=56, best {'blockSize': 30, 'compiler': 'gcc', 'optLevel': 3}, cost time=0.7472, found by DifferentialEvolutionAlt
+[    96s]    INFO opentuner.search.plugin.DisplayPlugin: tests=64, best {'blockSize': 30, 'compiler': 'gcc', 'optLevel': 3}, cost time=0.7472, found by DifferentialEvolutionAlt
+[   107s]    INFO opentuner.search.plugin.DisplayPlugin: tests=68, best {'blockSize': 30, 'compiler': 'gcc', 'optLevel': 3}, cost time=0.7472, found by DifferentialEvolutionAlt
+[   124s]    INFO opentuner.search.plugin.DisplayPlugin: tests=76, best {'blockSize': 30, 'compiler': 'gcc', 'optLevel': 3}, cost time=0.7472, found by DifferentialEvolutionAlt
+[   155s]    INFO opentuner.search.plugin.DisplayPlugin: tests=80, best {'blockSize': 30, 'compiler': 'gcc', 'optLevel': 3}, cost time=0.7472, found by DifferentialEvolutionAlt
+[   170s]    INFO opentuner.search.plugin.DisplayPlugin: tests=88, best {'blockSize': 30, 'compiler': 'gcc', 'optLevel': 3}, cost time=0.7472, found by DifferentialEvolutionAlt
+[   183s]    INFO opentuner.search.plugin.DisplayPlugin: tests=102, best {'blockSize': 36, 'compiler': 'gcc', 'optLevel': 3}, cost time=0.6733, found by NormalGreedyMutation
+[   194s]    INFO opentuner.search.plugin.DisplayPlugin: tests=114, best {'blockSize': 36, 'compiler': 'gcc', 'optLevel': 3}, cost time=0.6733, found by NormalGreedyMutation
+[   204s]    INFO opentuner.search.plugin.DisplayPlugin: tests=125, best {'blockSize': 36, 'compiler': 'gcc', 'optLevel': 3}, cost time=0.6733, found by NormalGreedyMutation
+[   222s]    INFO opentuner.search.plugin.DisplayPlugin: tests=137, best {'blockSize': 36, 'compiler': 'gcc', 'optLevel': 3}, cost time=0.6733, found by NormalGreedyMutation
+[   236s]    INFO opentuner.search.plugin.DisplayPlugin: tests=143, best {'blockSize': 36, 'compiler': 'gcc', 'optLevel': 3}, cost time=0.6733, found by NormalGreedyMutation
+[   247s]    INFO opentuner.search.plugin.DisplayPlugin: tests=150, best {'blockSize': 36, 'compiler': 'gcc', 'optLevel': 3}, cost time=0.6733, found by NormalGreedyMutation
+[   259s]    INFO opentuner.search.plugin.DisplayPlugin: tests=156, best {'blockSize': 36, 'compiler': 'gcc', 'optLevel': 3}, cost time=0.6733, found by NormalGreedyMutation
+[   269s]    INFO opentuner.search.plugin.DisplayPlugin: tests=162, best {'blockSize': 36, 'compiler': 'gcc', 'optLevel': 3}, cost time=0.6733, found by NormalGreedyMutation
+[   283s]    INFO opentuner.search.plugin.DisplayPlugin: tests=166, best {'blockSize': 36, 'compiler': 'gcc', 'optLevel': 3}, cost time=0.6733, found by NormalGreedyMutation
+[   301s]    INFO opentuner.search.plugin.DisplayPlugin: tests=176, best {'blockSize': 36, 'compiler': 'gcc', 'optLevel': 3}, cost time=0.6733, found by NormalGreedyMutation
+[   301s]    INFO opentuner.search.plugin.DisplayPlugin: tests=176, best {'blockSize': 36, 'compiler': 'gcc', 'optLevel': 3}, cost time=0.6733, found by NormalGreedyMutation
+Optimal block size written to mmm_final_config.json:{'blockSize': 36, 'compiler': 'gcc', 'optLevel': 3}
