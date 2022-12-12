@@ -15,7 +15,6 @@ from opentuner import Result
 
 
 class BlockSizeTuner(MeasurementInterface):
-
   def manipulator(self):
     """
     Define the search space by creating a
