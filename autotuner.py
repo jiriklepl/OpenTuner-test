@@ -42,18 +42,19 @@ class BlockSizeTuner(MeasurementInterface):
     """
     cfg = desired_result.configuration.data
 
-    gcc_cmd = 'cc -O3 -march=native -D NDEBUG' + ' kernels/c_kernel.c'
+    # compile_cmd = 'c++ -std=c++23 -O3 -march=native -D NDEBUG' + ' kernels/cpp_kernel.cpp'
+    compile_cmd = 'cc -O3 -march=native -D NDEBUG' + ' kernels/c_kernel.c'
 
-    gcc_cmd += ' -D I_BLOCK_SIZE=' + str(cfg['I_BLOCK_SIZE'])
-    gcc_cmd += ' -D J_BLOCK_SIZE=' + str(cfg['J_BLOCK_SIZE'])
-    gcc_cmd += ' -D K_BLOCK_SIZE=' + str(cfg['K_BLOCK_SIZE'])
+    compile_cmd += ' -D I_BLOCK_SIZE=' + str(cfg['I_BLOCK_SIZE'])
+    compile_cmd += ' -D J_BLOCK_SIZE=' + str(cfg['J_BLOCK_SIZE'])
+    compile_cmd += ' -D K_BLOCK_SIZE=' + str(cfg['K_BLOCK_SIZE'])
 
-    if cfg['TRANSPOSE_A']: gcc_cmd += ' -D TRANSPOSE_A'
-    if cfg['TRANSPOSE_B']: gcc_cmd += ' -D TRANSPOSE_B'
+    if cfg['TRANSPOSE_A']: compile_cmd += ' -D TRANSPOSE_A'
+    if cfg['TRANSPOSE_B']: compile_cmd += ' -D TRANSPOSE_B'
 
-    gcc_cmd += ' -o ./tmp.bin'
+    compile_cmd += ' -o ./tmp.bin'
 
-    compile_result = self.call_program(gcc_cmd)
+    compile_result = self.call_program(compile_cmd)
     if not compile_result['returncode'] == 0:
         return Result(state='ERROR', time=math.inf)
 
@@ -65,7 +66,7 @@ class BlockSizeTuner(MeasurementInterface):
         return Result(state='ERROR', time=math.inf)
 
     time = float(run_result['stdout'].split()[0])
-    print("Success: time=" + str(time) + " on  " + str(cfg), file=sys.stderr)
+    print("Success: time=" + str(time) + " s on  " + str(cfg), file=sys.stderr)
     return Result(time=time)
 
   def save_final_config(self, configuration):

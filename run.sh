@@ -18,4 +18,6 @@ cd "$DIR" && {
     printf "Searching through approximately %s configurations..." "$($HERE/autotuner.py --print-search-space-size)"
 
     "$HERE/autotuner.py" --no-dups --stop-after="$MAX_SECONDS" --test-limit="$MAX_TESTS"
+
+    mv mmm_final_config.json "$HERE/mmm_final_config.json"
 }

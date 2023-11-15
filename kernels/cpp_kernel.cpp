@@ -3,9 +3,10 @@
 #include <chrono>
 #include <iostream>
 
-#define I 1280
-#define J 1280
-#define K 1280
+// A002182 - OEIS
+#define I 1260
+#define J 1680
+#define K 2520
 
 void prepare(auto &c, auto &a, auto &b) {
 	for (int i = 0; i < I; i++)
@@ -21,6 +22,25 @@ void prepare(auto &c, auto &a, auto &b) {
 		for (int j = 0; j < J; j++)
 			c[i][j] = 0; // zero matrix to store result
 }
+
+#ifdef RUN_NAIVE
+
+void compute(auto &c, const auto &a, const auto &b) {
+	for (int i = 0; i < I; i++)
+	{
+		for (int j = 0; j < J; j++)
+		{
+			int sum = 0;
+			for (int k = 0; k < K; k++)
+			{
+				sum += a[i][k] * b[k][j];
+			}
+			c[i][j] = sum;
+		}
+	}
+}
+
+#else
 
 void compute(auto &c, const auto &a, const auto &b) {
 #ifdef TRANSPOSE_A
@@ -57,23 +77,14 @@ void compute(auto &c, const auto &a, const auto &b) {
 			{
 				for (int i = tile_i; i < tile_i + I_BLOCK_SIZE; i++)
 				{
-					if (i >= I)
-						break;
-
 					for (int j = tile_j; j < tile_j + J_BLOCK_SIZE; j++)
 					{
 						// computes one part of the dot product
-
-						if (j >= J)
-							break;
 
 						int part_sum = c[i][j];
 
 						for (int k = product_part; k < product_part + K_BLOCK_SIZE; k++)
 						{
-							if (k >= K)
-								break;
-
 							part_sum += access_a(i, k) * access_b(k, j);
 						}
 
@@ -85,13 +96,19 @@ void compute(auto &c, const auto &a, const auto &b) {
 	}
 }
 
+#endif
+
 int main(int argc, const char** argv)
 {
+#ifndef RUN_NAIVE
 	if (I % I_BLOCK_SIZE != 0 || J % J_BLOCK_SIZE != 0 || K % K_BLOCK_SIZE != 0)
 	{
-		std::cerr << "Error: block sizes do not divide matrix dimensions\n";
+		printf("Error: block sizes do not divide matrix dimensions\n");
 		return 1;
 	}
+#endif
+
+	namespace chrono = std::chrono;
 
 	auto c = std::vector<std::array<int, J>>(I);
 	auto a = std::vector<std::array<int, K>>(I);
@@ -99,11 +116,11 @@ int main(int argc, const char** argv)
 
 	prepare(c, a, b);
 
-	auto start = std::chrono::steady_clock::now();
+	auto start = chrono::high_resolution_clock::now();
 	compute(c, a, b);
-	auto end = std::chrono::steady_clock::now();
+	auto end = chrono::high_resolution_clock::now();
 
-	std::cout << "Time: " << end - start << "\n";
+	std::cout << chrono::duration<double>(end - start).count() << "\n";
 
 	int check_sum = 0;
 	for (int i = 0; i < I; i++)
@@ -115,7 +132,6 @@ int main(int argc, const char** argv)
 		std::cerr << "Error: check sum is not" << std::min(I, J) << "\n";
 		return 1;
 	}
-	
-	std::cout << "Check sum: " << check_sum << "\n";
+
 	return 0;
 }
