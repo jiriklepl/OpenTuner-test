@@ -1,119 +1,142 @@
-Naive: 3.682069 s
+Naive: 6.145757 s
 Searching through approximately 10^{6.02} configurations.../home/jirka/.local/lib/python3.11/site-packages/opentuner/search/driver.py:183: SAWarning: Object of type <DesiredResult> not in session, add operation along 'TuningRun.desired_results' will not proceed
   self.session.flush()  # populate configuration_id
-Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 5, 'J_BLOCK_SIZE': 48, 'K_BLOCK_SIZE': 23, 'TRANSPOSE_A': False, 'TRANSPOSE_B': True}
-Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 44, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 44, 'K_BLOCK_SIZE': 61, 'TRANSPOSE_B': True}
-Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_A': False, 'I_BLOCK_SIZE': 54, 'K_BLOCK_SIZE': 48, 'J_BLOCK_SIZE': 20, 'TRANSPOSE_B': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 41, 'I_BLOCK_SIZE': 43, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 17, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 57, 'I_BLOCK_SIZE': 32, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 39, 'TRANSPOSE_A': False}
-Success: time=0.454261 s on  {'J_BLOCK_SIZE': 16, 'I_BLOCK_SIZE': 6, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 18, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 20, 'I_BLOCK_SIZE': 51, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 10, 'TRANSPOSE_A': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 59, 'I_BLOCK_SIZE': 62, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 51, 'TRANSPOSE_A': False}
-Success: time=0.668663 s on  {'J_BLOCK_SIZE': 16, 'I_BLOCK_SIZE': 6, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 18, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 16, 'I_BLOCK_SIZE': 31, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 16, 'TRANSPOSE_A': True}
-Success: time=1.36546 s on  {'J_BLOCK_SIZE': 16, 'I_BLOCK_SIZE': 6, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 8, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 16, 'I_BLOCK_SIZE': 6, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 54, 'TRANSPOSE_A': False}
-[    14s]    INFO opentuner.search.plugin.DisplayPlugin: tests=12, best #9, cost time=0.4543, found by DifferentialEvolutionAlt
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 53, 'I_BLOCK_SIZE': 60, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 47, 'TRANSPOSE_A': True}
-Success: time=0.401914 s on  {'J_BLOCK_SIZE': 30, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 45, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 18, 'I_BLOCK_SIZE': 18, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 22, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 63, 'I_BLOCK_SIZE': 29, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 39, 'TRANSPOSE_A': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 62, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 16, 'TRANSPOSE_A': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 35, 'I_BLOCK_SIZE': 26, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 20, 'TRANSPOSE_A': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 33, 'I_BLOCK_SIZE': 50, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 3, 'TRANSPOSE_A': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 14, 'I_BLOCK_SIZE': 29, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 47, 'TRANSPOSE_A': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 32, 'I_BLOCK_SIZE': 19, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 40, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 10, 'I_BLOCK_SIZE': 61, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 15, 'TRANSPOSE_A': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 45, 'I_BLOCK_SIZE': 54, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 30, 'TRANSPOSE_A': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 36, 'I_BLOCK_SIZE': 17, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 45, 'TRANSPOSE_A': False}
-[    25s]    INFO opentuner.search.plugin.DisplayPlugin: tests=24, best #13, cost time=0.4019, found by DifferentialEvolutionAlt
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 45, 'I_BLOCK_SIZE': 9, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 20, 'TRANSPOSE_A': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 60, 'I_BLOCK_SIZE': 44, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 45, 'TRANSPOSE_A': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 20, 'I_BLOCK_SIZE': 57, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 31, 'TRANSPOSE_A': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 60, 'I_BLOCK_SIZE': 16, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 62, 'TRANSPOSE_A': False}
-Success: time=0.482426 s on  {'J_BLOCK_SIZE': 30, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 2, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 30, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 34, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 30, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 46, 'TRANSPOSE_A': False}
-Success: time=2.45798 s on  {'J_BLOCK_SIZE': 3, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 45, 'TRANSPOSE_A': False}
-[    35s]    INFO opentuner.search.plugin.DisplayPlugin: tests=32, best #13, cost time=0.4019, found by DifferentialEvolutionAlt
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 20, 'I_BLOCK_SIZE': 19, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 45, 'TRANSPOSE_A': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 18, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 52, 'TRANSPOSE_A': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 18, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 45, 'TRANSPOSE_A': True}
-Success: time=1.09361 s on  {'J_BLOCK_SIZE': 30, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 45, 'TRANSPOSE_A': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 6, 'I_BLOCK_SIZE': 2, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 22, 'TRANSPOSE_A': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 28, 'I_BLOCK_SIZE': 51, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 41, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 39, 'I_BLOCK_SIZE': 44, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 61, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 11, 'I_BLOCK_SIZE': 48, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 34, 'TRANSPOSE_A': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 6, 'I_BLOCK_SIZE': 24, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 15, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 45, 'I_BLOCK_SIZE': 18, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 49, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 25, 'I_BLOCK_SIZE': 29, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 24, 'TRANSPOSE_A': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 30, 'I_BLOCK_SIZE': 34, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 1, 'TRANSPOSE_A': True}
-[    47s]    INFO opentuner.search.plugin.DisplayPlugin: tests=44, best #13, cost time=0.4019, found by DifferentialEvolutionAlt
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 19, 'I_BLOCK_SIZE': 34, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 20, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 30, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 59, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 61, 'I_BLOCK_SIZE': 60, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 45, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 30, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 13, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 37, 'I_BLOCK_SIZE': 49, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 29, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 30, 'I_BLOCK_SIZE': 12, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 47, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 31, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 48, 'TRANSPOSE_A': True}
-Success: time=1.93292 s on  {'J_BLOCK_SIZE': 30, 'I_BLOCK_SIZE': 12, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 45, 'TRANSPOSE_A': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 33, 'I_BLOCK_SIZE': 24, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 11, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 21, 'I_BLOCK_SIZE': 56, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 57, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 17, 'I_BLOCK_SIZE': 64, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 31, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 11, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 24, 'TRANSPOSE_A': True}
-[    59s]    INFO opentuner.search.plugin.DisplayPlugin: tests=56, best #13, cost time=0.4019, found by DifferentialEvolutionAlt
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 31, 'I_BLOCK_SIZE': 44, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 26, 'TRANSPOSE_A': False}
-Success: time=0.657304 s on  {'J_BLOCK_SIZE': 14, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 45, 'TRANSPOSE_A': False}
-Success: time=0.412028 s on  {'J_BLOCK_SIZE': 30, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 45, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 30, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 23, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 22, 'I_BLOCK_SIZE': 38, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 20, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 34, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 54, 'TRANSPOSE_A': False}
-Success: time=1.10842 s on  {'J_BLOCK_SIZE': 30, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 45, 'TRANSPOSE_A': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 34, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 44, 'TRANSPOSE_A': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 25, 'I_BLOCK_SIZE': 40, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 22, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 11, 'I_BLOCK_SIZE': 23, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 12, 'TRANSPOSE_A': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 49, 'I_BLOCK_SIZE': 8, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 7, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 13, 'I_BLOCK_SIZE': 27, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 64, 'TRANSPOSE_A': True}
-[    72s]    INFO opentuner.search.plugin.DisplayPlugin: tests=68, best #13, cost time=0.4019, found by DifferentialEvolutionAlt
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 31, 'I_BLOCK_SIZE': 43, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 25, 'TRANSPOSE_A': False}
-Success: time=0.341388 s on  {'J_BLOCK_SIZE': 48, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 28, 'TRANSPOSE_A': False}
-Success: time=2.89545 s on  {'J_BLOCK_SIZE': 30, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 45, 'TRANSPOSE_A': True}
-Success: time=2.95056 s on  {'J_BLOCK_SIZE': 30, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 45, 'TRANSPOSE_A': True}
-[    82s]    INFO opentuner.search.plugin.DisplayPlugin: tests=72, best #69, cost time=0.3414, found by UniformGreedyMutation
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 48, 'I_BLOCK_SIZE': 59, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 28, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 58, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 28, 'TRANSPOSE_A': True}
-Success: time=0.463867 s on  {'J_BLOCK_SIZE': 42, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 28, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 48, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 39, 'TRANSPOSE_A': False}
-Success: time=2.91698 s on  {'J_BLOCK_SIZE': 2, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 28, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 48, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 27, 'TRANSPOSE_A': False}
-Success: time=0.330786 s on  {'J_BLOCK_SIZE': 48, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 14, 'TRANSPOSE_A': False}
-Success: time=0.292951 s on  {'J_BLOCK_SIZE': 48, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 8, 'TRANSPOSE_A': False}
-[    95s]    INFO opentuner.search.plugin.DisplayPlugin: tests=80, best #78, cost time=0.2930, found by UniformGreedyMutation
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 53, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 8, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 22, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 8, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 48, 'I_BLOCK_SIZE': 19, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 8, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 36, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 8, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 49, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 8, 'TRANSPOSE_A': False}
-Success: time=0.224268 s on  {'J_BLOCK_SIZE': 48, 'I_BLOCK_SIZE': 36, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 8, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 33, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 8, 'TRANSPOSE_A': False}
-Success: time=0.466439 s on  {'J_BLOCK_SIZE': 24, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 8, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 48, 'I_BLOCK_SIZE': 36, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 64, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 48, 'I_BLOCK_SIZE': 34, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 8, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 32, 'I_BLOCK_SIZE': 61, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 8, 'TRANSPOSE_A': True}
-Success: time=0.491355 s on  {'J_BLOCK_SIZE': 14, 'I_BLOCK_SIZE': 36, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 7, 'TRANSPOSE_A': False}
-[   108s]    INFO opentuner.search.plugin.DisplayPlugin: tests=92, best #84, cost time=0.2243, found by UniformGreedyMutation
-Success: time=1.47757 s on  {'J_BLOCK_SIZE': 48, 'I_BLOCK_SIZE': 36, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 8, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 48, 'I_BLOCK_SIZE': 16, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 8, 'TRANSPOSE_A': False}
-Success: time=0.649048 s on  {'J_BLOCK_SIZE': 5, 'I_BLOCK_SIZE': 36, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 8, 'TRANSPOSE_A': False}
-Success: time=0.286727 s on  {'J_BLOCK_SIZE': 48, 'I_BLOCK_SIZE': 10, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 8, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 48, 'I_BLOCK_SIZE': 36, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 11, 'TRANSPOSE_A': True}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 48, 'I_BLOCK_SIZE': 55, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 8, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 48, 'I_BLOCK_SIZE': 36, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 62, 'TRANSPOSE_A': True}
-Success: time=0.386375 s on  {'J_BLOCK_SIZE': 48, 'I_BLOCK_SIZE': 12, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': False}
-[   119s]    INFO opentuner.search.plugin.DisplayPlugin: tests=100, best #84, cost time=0.2243, found by UniformGreedyMutation
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 48, 'I_BLOCK_SIZE': 52, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 8, 'TRANSPOSE_A': False}
-Success: time=0.268838 s on  {'J_BLOCK_SIZE': 48, 'I_BLOCK_SIZE': 15, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 8, 'TRANSPOSE_A': False}
-Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 48, 'I_BLOCK_SIZE': 36, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 11, 'TRANSPOSE_A': False}
-Success: time=0.483597 s on  {'J_BLOCK_SIZE': 14, 'I_BLOCK_SIZE': 36, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 8, 'TRANSPOSE_A': False}
-[   123s]    INFO opentuner.search.plugin.DisplayPlugin: tests=104, best #84, cost time=0.2243, found by UniformGreedyMutation
-Optimal configuration written to mmm_final_config.json:{'J_BLOCK_SIZE': 48, 'I_BLOCK_SIZE': 36, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 8, 'TRANSPOSE_A': False}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 47, 'J_BLOCK_SIZE': 51, 'K_BLOCK_SIZE': 3, 'TRANSPOSE_A': False, 'TRANSPOSE_B': False}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 54, 'J_BLOCK_SIZE': 33, 'K_BLOCK_SIZE': 2, 'TRANSPOSE_A': True, 'TRANSPOSE_B': True}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 29, 'I_BLOCK_SIZE': 28, 'TRANSPOSE_A': True, 'J_BLOCK_SIZE': 43}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 26, 'I_BLOCK_SIZE': 39, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 40}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 31, 'I_BLOCK_SIZE': 37, 'TRANSPOSE_A': True, 'J_BLOCK_SIZE': 47}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_A': True, 'I_BLOCK_SIZE': 57, 'K_BLOCK_SIZE': 50, 'TRANSPOSE_B': False, 'J_BLOCK_SIZE': 39}
+Error: block sizes do not divide matrix dimensions on {'K_BLOCK_SIZE': 2, 'TRANSPOSE_A': True, 'TRANSPOSE_B': True, 'I_BLOCK_SIZE': 41, 'J_BLOCK_SIZE': 40}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 55, 'TRANSPOSE_B': False, 'TRANSPOSE_A': False, 'K_BLOCK_SIZE': 35, 'J_BLOCK_SIZE': 41}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 55, 'J_BLOCK_SIZE': 3, 'K_BLOCK_SIZE': 62, 'TRANSPOSE_A': False, 'TRANSPOSE_B': False}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 8, 'J_BLOCK_SIZE': 9, 'K_BLOCK_SIZE': 29, 'TRANSPOSE_A': False, 'TRANSPOSE_B': True}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 39, 'J_BLOCK_SIZE': 41, 'K_BLOCK_SIZE': 9, 'TRANSPOSE_A': True, 'TRANSPOSE_B': True}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 45, 'J_BLOCK_SIZE': 16, 'TRANSPOSE_B': False, 'TRANSPOSE_A': False, 'K_BLOCK_SIZE': 57}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 33, 'J_BLOCK_SIZE': 1, 'K_BLOCK_SIZE': 60, 'TRANSPOSE_A': True, 'TRANSPOSE_B': True}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 25, 'I_BLOCK_SIZE': 24, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 16}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': False, 'J_BLOCK_SIZE': 36, 'TRANSPOSE_A': True, 'K_BLOCK_SIZE': 9, 'I_BLOCK_SIZE': 62}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 54, 'I_BLOCK_SIZE': 35, 'TRANSPOSE_A': True, 'J_BLOCK_SIZE': 21}
+[    14s]    INFO opentuner.search.plugin.DisplayPlugin: tests=16, best #41, cost time=inf, found by RandomNelderMead
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 35, 'J_BLOCK_SIZE': 13, 'K_BLOCK_SIZE': 43, 'TRANSPOSE_A': True, 'TRANSPOSE_B': False}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 55, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 58, 'K_BLOCK_SIZE': 58, 'TRANSPOSE_B': False}
+Error: block sizes do not divide matrix dimensions on {'K_BLOCK_SIZE': 61, 'J_BLOCK_SIZE': 8, 'I_BLOCK_SIZE': 48, 'TRANSPOSE_B': False, 'TRANSPOSE_A': False}
+Error: block sizes do not divide matrix dimensions on {'K_BLOCK_SIZE': 18, 'J_BLOCK_SIZE': 34, 'TRANSPOSE_A': False, 'TRANSPOSE_B': False, 'I_BLOCK_SIZE': 1}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 38, 'J_BLOCK_SIZE': 31, 'K_BLOCK_SIZE': 16, 'TRANSPOSE_A': False, 'TRANSPOSE_B': False}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 9, 'I_BLOCK_SIZE': 27, 'TRANSPOSE_A': True, 'J_BLOCK_SIZE': 26}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 27, 'I_BLOCK_SIZE': 57, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 9}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 32, 'J_BLOCK_SIZE': 31, 'I_BLOCK_SIZE': 20, 'TRANSPOSE_A': True}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 37, 'J_BLOCK_SIZE': 25, 'K_BLOCK_SIZE': 25, 'TRANSPOSE_A': False, 'TRANSPOSE_B': False}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': True, 'I_BLOCK_SIZE': 56, 'J_BLOCK_SIZE': 2, 'TRANSPOSE_A': True, 'K_BLOCK_SIZE': 10}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 57, 'TRANSPOSE_B': False, 'TRANSPOSE_A': True, 'J_BLOCK_SIZE': 25, 'K_BLOCK_SIZE': 31}
+Error: block sizes do not divide matrix dimensions on {'K_BLOCK_SIZE': 23, 'TRANSPOSE_A': True, 'I_BLOCK_SIZE': 23, 'J_BLOCK_SIZE': 12, 'TRANSPOSE_B': False}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 37, 'J_BLOCK_SIZE': 16, 'K_BLOCK_SIZE': 40, 'TRANSPOSE_A': False, 'TRANSPOSE_B': False}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': True, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 27, 'K_BLOCK_SIZE': 36, 'I_BLOCK_SIZE': 62}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 18, 'K_BLOCK_SIZE': 37, 'TRANSPOSE_A': True, 'TRANSPOSE_B': False, 'I_BLOCK_SIZE': 27}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 13, 'I_BLOCK_SIZE': 42, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 8}
+[    27s]    INFO opentuner.search.plugin.DisplayPlugin: tests=32, best #53, cost time=inf, found by RandomNelderMead
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 37, 'J_BLOCK_SIZE': 19, 'K_BLOCK_SIZE': 35, 'TRANSPOSE_A': False, 'TRANSPOSE_B': False}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 9, 'I_BLOCK_SIZE': 64, 'TRANSPOSE_A': True, 'J_BLOCK_SIZE': 42}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 13, 'I_BLOCK_SIZE': 43, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 62}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 64, 'I_BLOCK_SIZE': 64, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 27}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 37, 'J_BLOCK_SIZE': 22, 'K_BLOCK_SIZE': 26, 'TRANSPOSE_A': False, 'TRANSPOSE_B': False}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_A': False, 'I_BLOCK_SIZE': 44, 'J_BLOCK_SIZE': 9, 'K_BLOCK_SIZE': 49, 'TRANSPOSE_B': False}
+Error: block sizes do not divide matrix dimensions on {'K_BLOCK_SIZE': 30, 'I_BLOCK_SIZE': 49, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 57, 'TRANSPOSE_B': True}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_A': False, 'TRANSPOSE_B': True, 'I_BLOCK_SIZE': 22, 'J_BLOCK_SIZE': 36, 'K_BLOCK_SIZE': 63}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 37, 'J_BLOCK_SIZE': 21, 'K_BLOCK_SIZE': 29, 'TRANSPOSE_A': False, 'TRANSPOSE_B': False}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 61, 'TRANSPOSE_A': False, 'K_BLOCK_SIZE': 10, 'TRANSPOSE_B': False, 'J_BLOCK_SIZE': 56}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': True, 'I_BLOCK_SIZE': 63, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 44, 'K_BLOCK_SIZE': 60}
+Error: block sizes do not divide matrix dimensions on {'K_BLOCK_SIZE': 41, 'I_BLOCK_SIZE': 2, 'TRANSPOSE_B': True, 'J_BLOCK_SIZE': 26, 'TRANSPOSE_A': False}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 37, 'J_BLOCK_SIZE': 21, 'K_BLOCK_SIZE': 35, 'TRANSPOSE_A': False, 'TRANSPOSE_B': False}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 60, 'J_BLOCK_SIZE': 44, 'TRANSPOSE_A': False, 'K_BLOCK_SIZE': 12, 'TRANSPOSE_B': False}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 27, 'I_BLOCK_SIZE': 47, 'TRANSPOSE_A': True, 'J_BLOCK_SIZE': 64}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 22, 'I_BLOCK_SIZE': 33, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 7}
+[    40s]    INFO opentuner.search.plugin.DisplayPlugin: tests=48, best #65, cost time=inf, found by RandomNelderMead
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 37, 'J_BLOCK_SIZE': 21, 'K_BLOCK_SIZE': 33, 'TRANSPOSE_A': False, 'TRANSPOSE_B': False}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 49, 'K_BLOCK_SIZE': 53, 'I_BLOCK_SIZE': 4, 'TRANSPOSE_B': False}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': False, 'TRANSPOSE_A': True, 'J_BLOCK_SIZE': 54, 'I_BLOCK_SIZE': 35, 'K_BLOCK_SIZE': 57}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 56, 'I_BLOCK_SIZE': 1, 'TRANSPOSE_B': True, 'TRANSPOSE_A': False, 'K_BLOCK_SIZE': 26}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 37, 'J_BLOCK_SIZE': 21, 'K_BLOCK_SIZE': 30, 'TRANSPOSE_A': False, 'TRANSPOSE_B': False}
+Error: block sizes do not divide matrix dimensions on {'K_BLOCK_SIZE': 32, 'TRANSPOSE_A': True, 'J_BLOCK_SIZE': 33, 'I_BLOCK_SIZE': 40, 'TRANSPOSE_B': False}
+Error: block sizes do not divide matrix dimensions on {'K_BLOCK_SIZE': 5, 'J_BLOCK_SIZE': 62, 'I_BLOCK_SIZE': 32, 'TRANSPOSE_A': False, 'TRANSPOSE_B': False}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': True, 'TRANSPOSE_A': True, 'J_BLOCK_SIZE': 51, 'I_BLOCK_SIZE': 10, 'K_BLOCK_SIZE': 25}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 37, 'J_BLOCK_SIZE': 21, 'K_BLOCK_SIZE': 31, 'TRANSPOSE_A': False, 'TRANSPOSE_B': False}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 19, 'I_BLOCK_SIZE': 38, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 24}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 56, 'I_BLOCK_SIZE': 48, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 34}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 61, 'I_BLOCK_SIZE': 50, 'TRANSPOSE_A': True, 'J_BLOCK_SIZE': 52}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 52, 'J_BLOCK_SIZE': 47, 'K_BLOCK_SIZE': 3, 'TRANSPOSE_B': False, 'TRANSPOSE_A': True}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 58, 'TRANSPOSE_A': True, 'I_BLOCK_SIZE': 13, 'K_BLOCK_SIZE': 45, 'TRANSPOSE_B': True}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 21, 'J_BLOCK_SIZE': 13, 'TRANSPOSE_A': True, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 29}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 30, 'J_BLOCK_SIZE': 11, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 45, 'TRANSPOSE_A': True}
+[    53s]    INFO opentuner.search.plugin.DisplayPlugin: tests=64, best #76, cost time=inf, found by NormalGreedyMutation
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 13, 'I_BLOCK_SIZE': 20, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 43}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 44, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 35, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 64}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 14, 'I_BLOCK_SIZE': 36, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 13}
+Error: block sizes do not divide matrix dimensions on {'K_BLOCK_SIZE': 47, 'J_BLOCK_SIZE': 62, 'I_BLOCK_SIZE': 29, 'TRANSPOSE_B': False, 'TRANSPOSE_A': False}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 13, 'I_BLOCK_SIZE': 2, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 64}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 10, 'I_BLOCK_SIZE': 33, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 54}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 17, 'I_BLOCK_SIZE': 62, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 56}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 35, 'I_BLOCK_SIZE': 19, 'TRANSPOSE_A': True, 'J_BLOCK_SIZE': 59}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 54, 'K_BLOCK_SIZE': 44, 'TRANSPOSE_A': False, 'TRANSPOSE_B': True, 'I_BLOCK_SIZE': 7}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 25, 'K_BLOCK_SIZE': 24, 'TRANSPOSE_B': True, 'TRANSPOSE_A': True, 'J_BLOCK_SIZE': 14}
+Error: block sizes do not divide matrix dimensions on {'K_BLOCK_SIZE': 49, 'TRANSPOSE_A': True, 'I_BLOCK_SIZE': 7, 'J_BLOCK_SIZE': 12, 'TRANSPOSE_B': False}
+Error: block sizes do not divide matrix dimensions on {'K_BLOCK_SIZE': 55, 'J_BLOCK_SIZE': 61, 'TRANSPOSE_B': False, 'I_BLOCK_SIZE': 37, 'TRANSPOSE_A': True}
+Error: block sizes do not divide matrix dimensions on {'K_BLOCK_SIZE': 3, 'J_BLOCK_SIZE': 5, 'I_BLOCK_SIZE': 22, 'TRANSPOSE_B': False, 'TRANSPOSE_A': False}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 2, 'TRANSPOSE_A': False, 'I_BLOCK_SIZE': 17, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 23}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 44, 'J_BLOCK_SIZE': 20, 'TRANSPOSE_A': False, 'I_BLOCK_SIZE': 1}
+Error: block sizes do not divide matrix dimensions on {'K_BLOCK_SIZE': 55, 'J_BLOCK_SIZE': 9, 'I_BLOCK_SIZE': 41, 'TRANSPOSE_A': False, 'TRANSPOSE_B': False}
+[    66s]    INFO opentuner.search.plugin.DisplayPlugin: tests=80, best #86, cost time=inf, found by NormalGreedyMutation
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 42, 'I_BLOCK_SIZE': 45, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 38}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 9, 'I_BLOCK_SIZE': 12, 'TRANSPOSE_A': True, 'J_BLOCK_SIZE': 33}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 35, 'I_BLOCK_SIZE': 36, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 49}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 46, 'I_BLOCK_SIZE': 47, 'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 57}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_A': False, 'J_BLOCK_SIZE': 22, 'I_BLOCK_SIZE': 35, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 47}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 12, 'I_BLOCK_SIZE': 25, 'TRANSPOSE_B': False, 'TRANSPOSE_A': False, 'K_BLOCK_SIZE': 3}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 26, 'K_BLOCK_SIZE': 48, 'TRANSPOSE_B': False, 'J_BLOCK_SIZE': 59, 'TRANSPOSE_A': True}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 40, 'TRANSPOSE_A': True, 'I_BLOCK_SIZE': 2, 'K_BLOCK_SIZE': 59, 'TRANSPOSE_B': True}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_A': True, 'J_BLOCK_SIZE': 3, 'I_BLOCK_SIZE': 37, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 46}
+Success: time=1.46635 s on  {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': True}
+Error: block sizes do not divide matrix dimensions on {'TRANSPOSE_A': True, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 60, 'I_BLOCK_SIZE': 32, 'J_BLOCK_SIZE': 37}
+Error: block sizes do not divide matrix dimensions on {'I_BLOCK_SIZE': 56, 'TRANSPOSE_B': False, 'TRANSPOSE_A': True, 'K_BLOCK_SIZE': 36, 'J_BLOCK_SIZE': 44}
+[    78s]    INFO opentuner.search.plugin.DisplayPlugin: tests=92, best #95, cost time=1.4664, found by NormalGreedyMutation
+Success: time=0.238287 s on  {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': False}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 27, 'I_BLOCK_SIZE': 36, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': True}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 13, 'TRANSPOSE_A': False}
+Success: time=1.4479 s on  {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': False}
+Success: time=1.50115 s on  {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': True}
+Success: time=1.49364 s on  {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': True}
+Success: time=0.711967 s on  {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 1, 'TRANSPOSE_A': False}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 37, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': True}
+[    90s]    INFO opentuner.search.plugin.DisplayPlugin: tests=100, best #98, cost time=0.2383, found by NormalGreedyMutation
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 17, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 5, 'TRANSPOSE_A': False}
+Success: time=0.315043 s on  {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 15, 'TRANSPOSE_A': True}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 44, 'I_BLOCK_SIZE': 29, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': False}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 45, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': True}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 35, 'I_BLOCK_SIZE': 24, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': False}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 25, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 1, 'TRANSPOSE_A': False}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 27, 'I_BLOCK_SIZE': 49, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 6, 'TRANSPOSE_A': True}
+Success: time=0.286675 s on  {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 21, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 12, 'TRANSPOSE_A': False}
+Success: time=1.45492 s on  {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': True}
+Success: time=0.264665 s on  {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': True}
+Success: time=1.42599 s on  {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 5, 'TRANSPOSE_A': False}
+Success: time=0.262484 s on  {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 36, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': True}
+[   105s]    INFO opentuner.search.plugin.DisplayPlugin: tests=112, best #98, cost time=0.2383, found by NormalGreedyMutation
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 47, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': False}
+Success: time=0.265209 s on  {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 35, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': True}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 23, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': True}
+Success: time=0.887195 s on  {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 21, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 1, 'TRANSPOSE_A': False}
+Success: time=1.51946 s on  {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 35, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': True}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 33, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': True}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 36, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': True}
+Success: time=0.281825 s on  {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 2, 'TRANSPOSE_A': False}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 39, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 9, 'TRANSPOSE_A': True}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 34, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': True}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 41, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 7, 'TRANSPOSE_A': False}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 11, 'TRANSPOSE_A': True}
+[   118s]    INFO opentuner.search.plugin.DisplayPlugin: tests=124, best #98, cost time=0.2383, found by NormalGreedyMutation
+Success: time=1.54037 s on  {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 20, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 3, 'TRANSPOSE_A': False}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 36, 'I_BLOCK_SIZE': 27, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': True}
+Error: block sizes do not divide matrix dimensions on {'J_BLOCK_SIZE': 36, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 1, 'TRANSPOSE_A': False}
+Success: time=1.42984 s on  {'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': True, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': False}
+[   124s]    INFO opentuner.search.plugin.DisplayPlugin: tests=128, best #98, cost time=0.2383, found by NormalGreedyMutation
+Optimal configuration written to mmm_final_config.json:{'J_BLOCK_SIZE': 40, 'I_BLOCK_SIZE': 30, 'TRANSPOSE_B': False, 'K_BLOCK_SIZE': 4, 'TRANSPOSE_A': False}

@@ -47,9 +47,19 @@ void compute(auto &c, const auto &a, const auto &b) {
 	auto a_t = std::vector<std::array<int, I>>(K);
 
 	// copy a into a_t
-	for (int i = 0; i < I; i++)
-		for (int k = 0; k < K; k++)
-			a_t[k][i] = a[i][k];
+	for (int tile_i = 0; tile_i < I; tile_i += I_BLOCK_SIZE)
+	{
+		for (int tile_k = 0; tile_k < K; tile_k += K_BLOCK_SIZE)
+		{
+			for (int i = tile_i; i < tile_i + I_BLOCK_SIZE; i++)
+			{
+				for (int k = tile_k; k < tile_k + K_BLOCK_SIZE; k++)
+				{
+					a_t[k][i] = a[i][k];
+				}
+			}
+		}
+	}
 
 	#define access_a(i, k) a_t[k][i]
 #else
@@ -60,9 +70,19 @@ void compute(auto &c, const auto &a, const auto &b) {
 	auto b_t = std::vector<std::array<int, K>>(J);
 
 	// copy b into b_t
-	for (int k = 0; k < K; k++)
-		for (int j = 0; j < J; j++)
-			b_t[j][k] = b[k][j];
+	for (int tile_j = 0; tile_j < J; tile_j += J_BLOCK_SIZE)
+	{
+		for (int tile_k = 0; tile_k < K; tile_k += K_BLOCK_SIZE)
+		{
+			for (int j = tile_j; j < tile_j + J_BLOCK_SIZE; j++)
+			{
+				for (int k = tile_k; k < tile_k + K_BLOCK_SIZE; k++)
+				{
+					b_t[j][k] = b[k][j];
+				}
+			}
+		}
+	}
 
 	#define access_b(k, j) b_t[j][k]
 #else
