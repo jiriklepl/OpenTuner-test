@@ -3,5 +3,6 @@
 ## How to recreate the transcript
 
 ```sh
-./run.sh 2>&1 | tee transcript.log
+# ./run.sh [MAX_TESTS [MAX_SECONDS]]
+./run.sh 300 60 2>&1 | tee transcript.log
 ```

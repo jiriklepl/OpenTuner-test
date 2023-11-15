@@ -1,16 +1,21 @@
-#!/bin/sh
+#!/bin/sh -e
 
+MAX_TESTS=${1:-300}
+MAX_SECONDS=${2:-60}
 
 HERE=$(pwd)
+DIR=$(mktemp -d)
 
-if DIR="/tmp/$(uuid)"; then
-    mkdir -p "$DIR"
-    echo "$DIR"
+trap "rm -rf $DIR" EXIT
 
-    {
-        cd "$DIR" && {
-            ln -s "$HERE/kernels" kernels
-            "$HERE/autotuner.py" --no-dups --stop-after=300
-        }
-    }
-fi
+cd "$DIR" && {
+    ln -s "$HERE/kernels" kernels
+
+    cc -O3 -march=native -D NDEBUG -D RUN_NAIVE kernels/c_kernel.c -o naive
+
+    echo "Naive: $(./naive)"
+
+    printf "Searching through approximately %s configurations..." "$($HERE/autotuner.py --print-search-space-size)"
+
+    "$HERE/autotuner.py" --no-dups --stop-after="$MAX_SECONDS" --test-limit="$MAX_TESTS"
+}
