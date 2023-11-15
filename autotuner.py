@@ -11,6 +11,7 @@ import opentuner
 from opentuner.search.manipulator import ConfigurationManipulator
 from opentuner.search.manipulator import IntegerParameter
 from opentuner.search.manipulator import BooleanParameter
+from opentuner.search.manipulator import PermutationParameter
 from opentuner import MeasurementInterface
 from opentuner import Result
 
@@ -29,6 +30,8 @@ class BlockSizeTuner(MeasurementInterface):
     manipulator.add_parameter(IntegerParameter('I_BLOCK_SIZE', 1, 64))
     manipulator.add_parameter(IntegerParameter('J_BLOCK_SIZE', 1, 64))
     manipulator.add_parameter(IntegerParameter('K_BLOCK_SIZE', 1, 64))
+    
+    manipulator.add_parameter(PermutationParameter('LOOP_ORDER', ['i', 'j', 'k']))
 
     manipulator.add_parameter(BooleanParameter('TRANSPOSE_A'))
     manipulator.add_parameter(BooleanParameter('TRANSPOSE_B'))
@@ -48,6 +51,10 @@ class BlockSizeTuner(MeasurementInterface):
     compile_cmd += ' -D I_BLOCK_SIZE=' + str(cfg['I_BLOCK_SIZE'])
     compile_cmd += ' -D J_BLOCK_SIZE=' + str(cfg['J_BLOCK_SIZE'])
     compile_cmd += ' -D K_BLOCK_SIZE=' + str(cfg['K_BLOCK_SIZE'])
+    
+    compile_cmd += ' -D FIRST_LOOP_' + cfg['LOOP_ORDER'][0].upper()
+    compile_cmd += ' -D SECOND_LOOP_' + cfg['LOOP_ORDER'][1].upper()
+    compile_cmd += ' -D THIRD_LOOP_' + cfg['LOOP_ORDER'][2].upper()
 
     if cfg['TRANSPOSE_A']: compile_cmd += ' -D TRANSPOSE_A'
     if cfg['TRANSPOSE_B']: compile_cmd += ' -D TRANSPOSE_B'

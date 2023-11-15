@@ -95,20 +95,40 @@ void compute(auto &c, const auto &a, const auto &b) {
 		{
 			for (int product_part = 0; product_part < K; product_part += K_BLOCK_SIZE)
 			{
+#ifdef FIRST_LOOP_I
 				for (int i = tile_i; i < tile_i + I_BLOCK_SIZE; i++)
+#endif
+#ifdef FIRST_LOOP_J
+				for (int j = tile_j; j < tile_j + J_BLOCK_SIZE; j++)
+#endif
+#ifdef FIRST_LOOP_K
+				for (int k = product_part; k < product_part + K_BLOCK_SIZE; k++)
+#endif
 				{
+
+#ifdef SECOND_LOOP_I
+					for (int i = tile_i; i < tile_i + I_BLOCK_SIZE; i++)
+#endif
+#ifdef SECOND_LOOP_J
 					for (int j = tile_j; j < tile_j + J_BLOCK_SIZE; j++)
+#endif
+#ifdef SECOND_LOOP_K
+					for (int k = product_part; k < product_part + K_BLOCK_SIZE; k++)
+#endif
 					{
-						// computes one part of the dot product
 
-						int part_sum = c[i][j];
-
+#ifdef THIRD_LOOP_I
+						for (int i = tile_i; i < tile_i + I_BLOCK_SIZE; i++)
+#endif
+#ifdef THIRD_LOOP_J
+						for (int j = tile_j; j < tile_j + J_BLOCK_SIZE; j++)
+#endif
+#ifdef THIRD_LOOP_K
 						for (int k = product_part; k < product_part + K_BLOCK_SIZE; k++)
+#endif
 						{
-							part_sum += access_a(i, k) * access_b(k, j);
+							c[i][j] += access_a(i, k) * access_b(k, j);
 						}
-
-						c[i][j] = part_sum;
 					}
 				}
 			}
